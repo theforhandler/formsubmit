@@ -2,9 +2,11 @@
 <html lang="en">
 
 <head>
+   
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#317EFB" />
+    <meta name="theme-color" content="#317EFB"/>
     <meta name="description"
         content="lundby camping, himmerlands camping, himmerland, lundby, Nibe, put and take, himmerlandsfiskepark, camping nordjylland, camping, fiskesøer, weekendophold, ferie, sommerferie, camping ferie, hytte, udlejning">
     <link rel="stylesheet" href="assets/css/header-main.css">
@@ -34,7 +36,7 @@
         </form>
     
     </dialog> -->
-    <dialog id="myDialogPrice">
+    <!-- <dialog id="myDialogPrice">
         <form>
             <a href="#" onclick="window.myDialogPrice.close();">Back</a>
             <ul>
@@ -51,19 +53,19 @@
             </ul>
         </form>
 
-    </dialog>
+    </dialog> -->
     <dialog id="myDialog">
         <a href="#" onclick="window.myDialog.close();">Back</a>
         <form action="https://formsubmit.co/d162db9163aca7346ec596a379cf8630" method="POST">
             <input type="text" name="Name" id="txtName" placeholder="Name">
             <input type="tel" name="Phone" id="txtNumber" placeholder="Number">
-            <input type="email" name="E-mail" id="txtEmail" placeholder="E-mail" required><br><br><br><br>
+            <input type="email" name="E-mail" id="txtEmail" placeholder="E-mail" required>
             From
             <input type="date" name="from" id="txtDateFrom" placeholder="from" required>
             To<input type="date" name="to" id="txtDateTo" required>
             <br>
-            <label for="voksne">Antal Voksne</label>
-            <select name="voksne" id="voksne" required>
+            <label for="voksne1">Antal Voksne</label>
+            <select name="voksne" id="voksne1" required>
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -103,11 +105,11 @@
     </header>
     <nav class="nav-main">
         <ul>
-            <li><a href="index.html">Forside</a></li>
-            <li><a href="#">Kontakt</a></li>
-            <li><a href="#" onclick="window.myDialogPrice.show();">Priser</a></li>
-            <li><a href="#" onclick="window.myDialog.show();">Forespørgelse</a></li>
-            <li><a href="#" onclick="window.Firstname.show();">Book Her</a></li>
+            <li><button><a href="index.html">Forside</a></button></li>
+            <li><button><a href="#">Kontakt</a></button></li>
+            <li><button><a href="#" onclick="window.myDialogPrice.show();">Priser</a></button></li>
+            <li><button><a href="#" onclick="window.myDialog.show();">Forespørgelse</a></button></li>
+            <!-- <li><a href="#" onclick="window.Firstname.show();">Book Her</a></li> -->
         </ul>
 
         <section class="section-fig">
