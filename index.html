@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="lundby camping, himmerlands camping, himmerland, lundby, Nibe, put and take, himmerlandsfiskepark, camping nordjylland, camping, fiskesøer, weekendophold, ferie, sommerferie, camping ferie, hytte, udlejning">
+    <meta name="theme-color" content="#317EFB"/>
+    <meta name="description"
+        content="lundby camping, himmerlands camping, himmerland, lundby, Nibe, put and take, himmerlandsfiskepark, camping nordjylland, camping, fiskesøer, weekendophold, ferie, sommerferie, camping ferie, hytte, udlejning">
     <link rel="stylesheet" href="assets/css/header-main.css">
     <link rel="stylesheet" href="assets/css/nav.css">
     <link rel="stylesheet" href="assets/css/main.css">
-   <link rel="stylesheet" href="assets/css/media.css">
+    <link rel="stylesheet" href="assets/css/media.css">
 
 
     <title>Lundby Camping</title>
@@ -48,25 +50,49 @@
                 <li><span></span><span></span></li>
             </ul>
         </form>
-        
+
     </dialog>
     <dialog id="myDialog">
         <a href="#" onclick="window.myDialog.close();">Back</a>
         <form action="https://formsubmit.co/d162db9163aca7346ec596a379cf8630" method="POST">
-            <input type="text" name="Name" id="txtName" placeholder="type your name">
-            <input type="tel" name="Phone" id="txtNumber" placeholder="type youre number">
-            <input type="email" name="E-mail" id="txtEmail" placeholder="type youre email" required>
+            <input type="text" name="Name" id="txtName" placeholder="Name">
+            <input type="tel" name="Phone" id="txtNumber" placeholder="Number">
+            <input type="email" name="E-mail" id="txtEmail" placeholder="E-mail" required><br><br><br><br>
             From
-            <input type="date" name="from" id="txtDateFrom" placeholder="from"required>
-            To<input type="date" name="to" id="txtDateTo"required>
-            <input type="datetime" name="Questions" id="txtQuestions" placeholder="questions">
+            <input type="date" name="from" id="txtDateFrom" placeholder="from" required>
+            To<input type="date" name="to" id="txtDateTo" required>
+            <br>
+            <label for="voksne">Antal Voksne</label>
+            <select name="voksne" id="voksne" required>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+
+            </select>
+            <label for="Børn under 12">Børn under 12</label>
+            <select name="voksne" id="voksne" required>
+                <option value="0">0</option >
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+
+            </select>
+
+            <br><input type="datetime" name="Questions" id="txtQuestions" placeholder="questions">
 
             <fieldset>
                 <input class="input1" type="reset" value="Reset">
                 <input class="input2" type="submit" value="Send">
             </fieldset>
         </form>
-       
+
     </dialog>
     <!-- GLOBAL HEADINGS? -->
     <header class="header-main">
@@ -86,21 +112,25 @@
 
         <section class="section-fig">
             <figure>
-                <img src="assets/images/q3.jpg" alt="">
+                <img src="assets/images/q3-Gendannet.jpg" alt="">
                 <figcaption>
+                <ul>
                     <li><span>Hytte 2</span><span>4 personer</span></li>
                     <li><span>senge</span> <span>2 køjer</span></li>
                     <li><span>køleskab</span> <span>Kaffemaskine</span></li>
                     <li><span>spiseplads </span><span>4 personer</span></li>
+                </ul>
                 </figcaption>
             </figure>
             <figure>
                 <img src="assets/images/h12.jpg" alt="">
-                <figcaption>
+                <figcaption >
+                <ul>
                     <li>Hytte <span>6 personer</span></li>
                     <li>senge <span>3 køjer</span></li>
                     <li>køleskab <span>Kaffemaskine</span></li>
                     <li>spiseplads <span>6 personer</span></li>
+                </ul>
                 </figcaption>
             </figure>
         </section>
